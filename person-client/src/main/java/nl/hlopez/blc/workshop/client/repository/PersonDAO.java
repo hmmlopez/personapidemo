@@ -35,7 +35,12 @@ public class PersonDAO {
     public List<Person> getAll() {
         List<Person> persons = new ArrayList<>();
         List<Cache.Entry<Object, Object>> all = cache.query(new ScanQuery<>()).getAll();
-        all.forEach(entry -> persons.add((Person)entry.getValue()));
+        all.forEach(entry -> {
+            Integer key = (Integer) entry.getKey();
+            Person person = (Person) entry.getValue();
+            person.setId(key);
+            persons.add(person);
+        });
         return persons;
     }
 

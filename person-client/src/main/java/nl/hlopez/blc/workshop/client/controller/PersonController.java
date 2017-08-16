@@ -18,7 +18,7 @@ public class PersonController {
 
     //    @GetMapping(path = "/person")
     public List<Person> getAllPersons() {
-        //TODO: 3. Use the personDAO to get all persons
+        //TODO: 3. Use the DAO to get all persons
         return null;
     }
     //TODO: 4. Add some data in the cache and view it through the browser

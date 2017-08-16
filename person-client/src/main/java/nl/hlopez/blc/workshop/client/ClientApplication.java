@@ -1,16 +1,10 @@
 package nl.hlopez.blc.workshop.client;
 
-import nl.hlopez.blc.workshop.client.repository.PersonDAO;
-import nl.hlopez.blc.workshop.model.Person;
-import org.apache.ignite.Ignite;
-import org.apache.ignite.IgniteCache;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-
-import java.util.List;
 
 @SpringBootApplication
 public class ClientApplication {
@@ -29,20 +23,23 @@ public class ClientApplication {
             //TODO:  5. Do a check first if the key already exists in the cache then log that person, other wise do put
             // -------------------
             //TODO: END SECTION 1
-            //TODO: Restart the server(s) to clear the cache, then continue with step 6
+            //TODO: Restart the server(s) to clear the cache, then continue with SECTION 2
             // -------------------
             //TODO: START SECTION 2 (USING DAO)
             // -------------------
-            //TODO:  6. Get an instance of the DAO
-            //TODO:  7. Use the DAO to insert a new Person in the cache
-            //TODO:  8. Use the DAO to get all persons from the cache and log them in console
+            //TODO:  6. Follow the comments in the PersonDAO to finish the coding
+            //TODO:  7. Get an instance of the DAO
+            //TODO:  8. Use the DAO to insert a new Person in the cache
+            //TODO:  9. Use the DAO to get all persons from the cache and log them in console
             // -------------------
             //TODO: END SECTION 2
+            //TODO: Restart the server(s) to clear the cache, then continue with SECTION 3
             // -------------------
             //TODO: START SECTION 3 (REST API)
             // -------------------
-            //TODO:  9. Follow the comments in the PersonController class to make the Rest API working
-
+            //TODO: 10. Follow the comments in the PersonController class to make the Rest API working
+            //TODO: 11. Remove the try-catch block to keep the client running so you can view it through the browser
+            log.info(">>> Shutting down client application...");
         }
     }
 }

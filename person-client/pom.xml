@@ -18,7 +18,7 @@
         </dependency>-->
         <dependency>
             <groupId>nl.hlopez.spring.ignite.demo.person.api</groupId>
-            <artifactId>ignite-model</artifactId>
+            <artifactId>person-model</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
