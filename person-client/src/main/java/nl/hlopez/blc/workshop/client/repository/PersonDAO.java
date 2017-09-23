@@ -29,7 +29,7 @@ public class PersonDAO {
     @PostConstruct
     public void init() {
         //TODO: 1. Get an instance of the cache
-        //TODO: 2. Initialize the sequence
+        //TODO: 2. Initialize the sequence with initVal to 1
     }
 
     public List<Person> getAll() {
@@ -47,6 +47,7 @@ public class PersonDAO {
     public Person save(Person person) {
         log.info(">>> Saving: " + person + " in the cache.");
         //TODO: 3. Put the person in the cache, using the sequence (and the Math.toIntExcact method)
+        //TODO:    NOTE: If the person.id is null generate a new Id with the sequence and put it in the cache
         return person;
     }
 }

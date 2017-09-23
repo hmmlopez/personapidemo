@@ -11,7 +11,7 @@ import java.util.List;
 //@RestController
 public class PersonController {
     //TODO: 1. Enable spring-boot-starter-web in the pom.xml
-    //TODO: 2. Uncomment all commented code
+    //TODO: 2. Uncomment all commented code (inclusive imports)
 
     @Autowired
     private PersonDAO personDAO;
