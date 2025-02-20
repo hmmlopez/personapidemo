@@ -26,7 +26,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <ignite.version>2.16.0</ignite.version>
+        <ignite.version>2.17.0</ignite.version>
         <testng.version>7.10.2</testng.version>
     </properties>
 
